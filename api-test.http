@@ -1,0 +1,44 @@
+### Get all users
+GET http://localhost:8081/api/users
+
+### Create user
+POST http://localhost:8081/api/users
+Content-Type: application/json
+
+{
+  "name": "Gauri Patil",
+  "email": "gauri@example.com",
+  "phone": "9876543210",
+  "password": "123456"
+}
+
+### Get all hotels
+GET http://localhost:8081/api/hotels
+
+### Create hotel
+POST http://localhost:8081/api/hotels
+Content-Type: application/json
+
+{
+  "name": "Hotel Grand",
+  "location": "Pune",
+  "description": "Comfortable hotel for business and family stays",
+  "contactNumber": "9876543210"
+}
+
+### Get all rooms
+GET http://localhost:8081/api/rooms
+
+### Create room
+POST http://localhost:8081/api/rooms
+Content-Type: application/json
+
+{
+  "roomNumber": "101",
+  "roomType": "DELUXE",
+  "pricePerNight": 2500,
+  "available": true,
+  "hotel": {
+    "id": 1
+  }
+}
